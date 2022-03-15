@@ -1,0 +1,46 @@
+.app-side-links
+{
+	display:flex;
+	flex-direction:column;
+	margin-top:30%;
+}
+
+.side-link
+{
+	color:var(--primary-grey);
+	text-decoration:none;
+	padding:10px 20px;
+	display:block;
+	transition:0.2s;
+}
+
+.side-link:hover
+{
+	background:hsla(0,0%,100%,.1);
+	text-shadow: 0 0 5px #000;
+	color:var(--primary-white);
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+	.app-side-links
+	{
+		flex-direction:row;
+		overflow-x:scroll;
+		margin-top:20%;
+	}
+	
+	.side-link
+	{
+		white-space:nowrap;
+		border:2px solid var(--primary-grey);
+		margin:10px 20px;
+		border-radius:25px;
+	}
+	
+
+}
+
+

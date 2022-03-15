@@ -1,0 +1,38 @@
+.side-nav
+{
+	width:20%;
+	position:fixed;
+	height:100%;
+	background:#3e3d49;
+	color:white;
+}
+
+.mid-section
+{
+	width:80%;
+	margin-left:20%;
+}
+
+#mid-container
+{
+	display:flex;
+}
+
+
+@media screen and (max-width: 840px) {
+	#mid-container
+	{
+		flex-direction:column;
+	}
+	.side-nav
+	{
+		width:100%;
+		position:unset;
+	}
+
+	.mid-section
+	{
+		width:100%;
+		margin-left:unset;
+	}
+}

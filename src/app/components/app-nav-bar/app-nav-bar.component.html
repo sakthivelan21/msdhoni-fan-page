@@ -1,0 +1,17 @@
+<div id="app-nav-bar">
+	<div class="nav-body">
+		<div class="nav-header">
+			<a href="/home" class="title-link">
+				<p class="nav-bar-title">MS DHONI FAN PAGE</p>
+			</a>
+			<button class="nav-button-ham" (click)="onToggleBarClick()"><i class="fas fa-bars"></i></button>
+			
+		</div>
+		<div [ngClass]="togglebar?'nav-mid-section show-nav-mid-section' :'nav-mid-section'"> 
+			<nav class="nav-bar-links">
+				<a class="nav-item" href="https://github.com/sakthivelan21" target="_blank" ><i class="fab fa-github" aria-hidden="true"></i> Source Code</a>
+				<a class="nav-item" href="#app-footer"><i class="fas fa-phone-alt" aria-hidden="true"></i> Contact me</a>
+			</nav>
+		</div>
+	</div>
+</div>
